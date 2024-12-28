@@ -1,0 +1,282 @@
+.container {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    background: #FCEDDA;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.container header {
+    font-size: 1.2rem;
+    color: #000;
+    font-weight: 600;
+    text-align: center;
+}
+
+.container .form {
+    margin-top: 15px;
+}
+
+.form .input-box {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.input-box label {
+    color: #000;
+}
+
+.form :where(.input-box input, .select-box) {
+    position: relative;
+    height: 35px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #808080;
+    margin-top: 5px;
+    border: 1px solid #EE4E34;
+    border-radius: 6px;
+    padding: 0 15px;
+    background: #FCEDDA;
+}
+
+.input-box input:focus {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.form .column {
+    display: flex;
+    column-gap: 15px;
+}
+
+.form .gender-box {
+    margin-top: 10px;
+}
+
+.form :where(.gender-option, .gender) {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+
+.form .gender {
+    column-gap: 5px;
+}
+
+.gender input {
+    accent-color: #EE4E34;
+}
+
+.form :where(.gender input, .gender label) {
+    cursor: pointer;
+}
+
+.gender label {
+    color: #000;
+}
+
+.address :where(input, .select-box) {
+    margin-top: 10px;
+}
+
+.select-box select {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #808080;
+    font-size: 1rem;
+    background: #FCEDDA;
+}
+
+.form button {
+    height: 40px;
+    width: 100%;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: #EE4E34;
+}
+
+.form button:hover {
+    background: #EE3E34;
+}
+
+.btn-96,
+.btn-96 *,
+.btn-96 :after,
+.btn-96 :before,
+.btn-96:after,
+.btn-96:before {
+    border: 0 solid;
+    box-sizing: border-box;
+}
+
+.btn-96 {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: button;
+    background-color: #EE4E34;
+    background-image: none;
+    color: #EE4E34;
+    cursor: pointer;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-size: 100%;
+    line-height: 1.5;
+    margin: 0;
+    /*-webkit-mask-image: -webkit-radial-gradient(#000, #fff);*/
+    padding: 0;
+
+    width: 450px;
+}
+
+.btn-96:disabled {
+    cursor: default;
+}
+
+.btn-96:-moz-focusring {
+    outline: auto;
+}
+
+.btn-96 svg {
+    display: block;
+    vertical-align: middle;
+}
+
+.btn-96 [hidden] {
+    display: none;
+}
+
+.btn-96 {
+    box-sizing: border-box;
+    display: block;
+    font-weight: 900;
+    -webkit-mask-image: none;
+    padding: 2rem 5rem;
+    perspective: 800px;
+    position: relative;
+    text-transform: uppercase;
+    transform-style: preserve-3d;
+}
+
+.btn-96 span {
+    background: #EE4E34;
+    color: #000;
+    display: grid;
+    inset: 0;
+    place-items: center;
+    position: absolute;
+    transform: rotateX(0deg);
+    transform-origin: top center;
+    transition: 0.2s;
+}
+
+.btn-96:hover span {
+    transform: rotateX(35deg);
+}
+
+.btn-96:after,
+.btn-96:before {
+    background: #ddd;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: rotateX(0deg);
+    width: 100%;
+    z-index: -1;
+}
+
+.btn-96:after {
+    background: #ccc;
+    width: 0;
+}
+
+.btn-96:hover:after {
+    -webkit-animation: progress-bar 1.2s;
+    animation: progress-bar 1.2s;
+}
+
+@-webkit-keyframes progress-bar {
+    0% {
+        opacity: 1;
+        width: 0;
+    }
+
+    10% {
+        opacity: 1;
+        width: 15%;
+    }
+
+    25% {
+        opacity: 1;
+        width: 25%;
+    }
+
+    40% {
+        opacity: 1;
+        width: 35%;
+    }
+
+    55% {
+        opacity: 1;
+        width: 75%;
+    }
+
+    60% {
+        opacity: 1;
+        width: 100%;
+    }
+
+    to {
+        opacity: 0;
+        width: 100%;
+    }
+}
+
+@keyframes progress-bar {
+    0% {
+        opacity: 1;
+        width: 0;
+    }
+
+    10% {
+        opacity: 1;
+        width: 15%;
+    }
+
+    25% {
+        opacity: 1;
+        width: 25%;
+    }
+
+    40% {
+        opacity: 1;
+        width: 35%;
+    }
+
+    55% {
+        opacity: 1;
+        width: 75%;
+    }
+
+    60% {
+        opacity: 1;
+        width: 100%;
+    }
+
+    to {
+        opacity: 0;
+        width: 100%;
+    }
+}

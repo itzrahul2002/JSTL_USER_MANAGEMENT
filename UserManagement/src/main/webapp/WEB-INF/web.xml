@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+<!--    <servlet>-->
+<!--        <servlet-name>GST</servlet-name>-->
+<!--        <servlet-class>com.example.ironman.GST</servlet-class>-->
+<!--    </servlet>-->
+
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>GST</servlet-name>-->
+<!--        <url-pattern>/calc</url-pattern>-->
+<!--    </servlet-mapping>-->
+
+    <servlet>
+        <description></description>
+        <display-name>Demo</display-name>
+        <servlet-name>Demo</servlet-name>
+        <servlet-class>com.Login.Demo</servlet-class>
+
+        <init-param>
+            <param-name>email</param-name>
+            <param-value>rahulthkaur95609@gamil.com</param-value>
+        </init-param>
+        <init-param>
+            <param-name>Password</param-name>
+            <param-value>Admin</param-value>
+        </init-param>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Demo</servlet-name>
+        <url-pattern>/Demo</url-pattern>
+    </servlet-mapping>
+
+
+
+
+    <welcome-file-list>
+        <welcome-file>Std_Register.jsp<welcome-file>Prcatice.jsp</welcome-file></welcome-file>
+        
+    </welcome-file-list>
+
+</web-app>
